@@ -1,8 +1,6 @@
-﻿namespace AdventOfCode.Interface
+﻿namespace AdventOfCode.Interface;
+public interface IDay 
 {
-    public interface IDay 
-    {
-        public void Play();
-        public string ToString();
-    }
+    public void Play();
+    public string ToString();
 }

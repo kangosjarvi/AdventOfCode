@@ -1,13 +1,12 @@
 ﻿using AdventOfCode.Interface;
 
-namespace AdventOfCode
+namespace AdventOfCode;
+internal abstract class BaseDay : IDay
 {
-    internal abstract class BaseDay : IDay
+    public virtual void Play()
     {
-        public virtual void Play()
-        {
-            Console.WriteLine(this);
-        }
-        public abstract override string ToString();
+        Console.WriteLine(this);
     }
+    public abstract override string ToString();
 }
+
